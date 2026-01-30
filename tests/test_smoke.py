@@ -1,10 +1,8 @@
-from playwright.sync_api import sync_playwright
+def test_github_title(page):
+    page.goto("https://github.com", wait_until="domcontentloaded")
+    assert "GitHub" in page.title()
 
 
-def test_open_github_homepage():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-        page.goto("https://github.com", wait_until="domcontentloaded")
-        assert "GitHub" in page.title()
-        browser.close()
+def test_github_url(page):
+    page.goto("https://github.com", wait_until="domcontentloaded")
+    assert page.url.startswith("https://github.com")

@@ -24,7 +24,4 @@ Create and activate virtual environment:
 ### Windows (PowerShell)
 ```powershell
 python -m venv venv
-.\venv\Scripts\Activate.ps1
-
-## Notes
-- venv/, __pycache__/, .pytest_cache/ are ignored by git (clean repo)
+.\venv\Scripts\Activate.ps1 

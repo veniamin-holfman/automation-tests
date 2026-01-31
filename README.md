@@ -6,7 +6,7 @@ Portfolio project: automated tests using **pytest**.
 
 - `tests/`
   - `tests/test_smoke.py` — basic smoke tests
-  - `tests/api/`
+  - `tests/api/`— API tests based on GitHub public API
     - `test_api_smoke.py` — API smoke test (GitHub API)
     - `test_api_negative.py` — API negative test (expects 404)
   - `tests/conftest.py` — shared pytest fixtures (if used)
